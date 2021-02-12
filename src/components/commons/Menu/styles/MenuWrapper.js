@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { breakpointsMedia } from '../../../../theme/utils/breakpointsMedia';
-import { TextStyleVariantsMap } from '../../../foundation/Text';
+import { TextStyleVariants } from '../../../foundation/Text';
 
 export const MenuWrapper = styled.nav`
   font-family: 'Rubik', sans-serif;
@@ -82,10 +82,10 @@ MenuWrapper.CentralSide = styled.div`
     transition: 200ms ease-in-out;
     ${breakpointsMedia({
     xs: css`
-        ${TextStyleVariantsMap.smallestException}
+        ${TextStyleVariants.smallestException}
     `,
     md: css`
-      ${TextStyleVariantsMap.paragraph1}
+      ${TextStyleVariants.paragraph1}
     `,
   })}
     &:hover,

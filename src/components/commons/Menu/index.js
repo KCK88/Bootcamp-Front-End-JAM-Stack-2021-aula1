@@ -24,7 +24,7 @@ export default function Menu() {
       <MenuWrapper.LeftSide>
         <Logo />
       </MenuWrapper.LeftSide>      
-      <MenuWrapper.Central>
+      <MenuWrapper.CentralSide>
         {links.map((link) => {
           return (
             <li key={link.url}>
@@ -34,12 +34,12 @@ export default function Menu() {
             </li>
           )
         } )}
-      </MenuWrapper.Central>      
+      </MenuWrapper.CentralSide>      
       <MenuWrapper.RightSide>
-        <Button ghost variant="secondary.main">
+        <Button type="button" ghost variant="secondary.main">
           Entrar
         </Button>
-        <Button variant="primary.main">
+        <Button type="button" variant="primary.main">
           cadastrar
         </Button>
       </MenuWrapper.RightSide>
