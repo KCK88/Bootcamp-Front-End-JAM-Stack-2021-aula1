@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import get from 'lodash/get';
 import PropTypes from 'prop-types';
+import { propToStyle } from '../../../theme/utils/propToStyle';
 
 const paragraph1 = css`
   ${({ theme }) => css`
@@ -27,6 +28,10 @@ export const TextStyleVariants = {
 const TextBase = styled.span`
   ${({ variant }) => TextStyleVariants[variant]}
   color: ${({ theme, color }) => get(theme, `colors.${color}.color`)};
+
+${propToStyle("textAlign")}
+${propToStyle("marginBotton")}
+${propToStyle("margin")}
 `;
 
 export function Text({
